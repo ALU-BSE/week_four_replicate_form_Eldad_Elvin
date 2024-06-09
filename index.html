@@ -38,15 +38,25 @@
           <input type="text" id="favoriteColor" name="favoriteColor" required />
         </div>
         <div class="form-group">
-          <label for="preferredContactMethod">Preferred Contact Method:</label>
-          <select
-            id="preferredContactMethod"
+          <label>Preferred Contact Method:</label>
+          <br />
+          <input
+            type="radio"
+            id="contactEmail"
             name="preferredContactMethod"
+            value="email"
             required
-          >
-            <option value="email">Email</option>
-            <option value="phone">Phone</option>
-          </select>
+          />
+          <label for="contactEmail">Email</label>
+          <br />
+          <input
+            type="radio"
+            id="contactPhone"
+            name="preferredContactMethod"
+            value="phone"
+            required
+          />
+          <label for="contactPhone">Phone</label>
         </div>
         <div class="form-group">
           <label for="gender">Gender:</label>
@@ -83,13 +93,17 @@
       </fieldset>
       <div class="form-group">
         <fieldset>
-        <legend><label for="cv">CV Upload:</label></legend>
-        <input type="file" id="cv" name="cv" />
-      </div></fieldset>
-      <div class="form-group"><fieldset>
-        <legend>agreement</legend>
-        <label for="agreement">I agree to the terms and conditions</label> <input type="checkbox" id="agreement" name="agreement" required />
-      </div> </fieldset>
+          <legend><label for="cv">CV Upload:</label></legend>
+          <input type="file" id="cv" name="cv" />
+        </fieldset>
+      </div>
+      <div class="form-group">
+        <fieldset>
+          <legend>Agreement</legend>
+          <label for="agreement">I agree to the terms and conditions</label>
+          <input type="checkbox" id="agreement" name="agreement" required />
+        </fieldset>
+      </div>
       <div class="form-group">
         <button type="submit">Submit</button>
       </div>
