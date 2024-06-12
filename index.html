@@ -6,4 +6,107 @@
     <title>Form</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>Personal Information</legend>
+        <div class="form-group">
+          <label for="firstName">First Name:</label>
+          <input type="text" id="firstName" name="firstName" required />
+        </div>
+        <div class="form-group">
+          <label for="lastName">Last Name:</label>
+          <input type="text" id="lastName" name="lastName" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="phoneNumber">Phone Number:</label>
+          <input type="tel" id="phoneNumber" name="phoneNumber" required />
+        </div>
+        <div class="form-group">
+          <label for="birthday">Birthday:</label>
+          <input type="date" id="birthday" name="birthday" required />
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Preferences</legend>
+        <div class="form-group">
+          <label for="favoriteColor">Favorite Color:</label>
+          <input type="text" id="favoriteColor" name="favoriteColor" required />
+        </div>
+        <div class="form-group">
+          <label>Preferred Contact Method:</label>
+          <br />
+          <input
+            type="radio"
+            id="contactEmail"
+            name="preferredContactMethod"
+            value="email"
+            required
+          />
+          <label for="contactEmail">Email</label>
+          <br />
+          <input
+            type="radio"
+            id="contactPhone"
+            name="preferredContactMethod"
+            value="phone"
+            required
+          />
+          <label for="contactPhone">Phone</label>
+        </div>
+        <div class="form-group">
+          <label for="gender">Gender:</label>
+          <br />
+          <input
+            type="radio"
+            id="genderMale"
+            name="gender"
+            value="male"
+            required
+          />
+          <label for="genderMale">Male</label>
+          <br />
+          <input
+            type="radio"
+            id="genderFemale"
+            name="gender"
+            value="female"
+            required
+          />
+          <label for="genderFemale">Female</label>
+        </div>
+        <div class="form-group">
+          <label for="quantity">Quantity (between 1 and 5):</label>
+          <input
+            type="number"
+            id="quantity"
+            name="quantity"
+            min="1"
+            max="5"
+            required
+          />
+        </div>
+      </fieldset>
+      <div class="form-group">
+        <fieldset>
+          <legend><label for="cv">CV Upload:</label></legend>
+          <input type="file" id="cv" name="cv" />
+        </fieldset>
+      </div>
+      <div class="form-group">
+        <fieldset>
+          <legend>Agreement</legend>
+          <label for="agreement">I agree to the terms and conditions</label>
+          <input type="checkbox" id="agreement" name="agreement" required />
+        </fieldset>
+      </div>
+      <div class="form-group">
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </body>
 </html>
